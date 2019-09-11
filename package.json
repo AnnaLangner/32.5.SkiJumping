@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js -b",
+    "test": "mocha *.test.js -b",
     "test:watch": "onchange \"./*.js\" -- npm test"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/AnnaLangner/32.5.SkiJumping#readme",
   "devDependencies": {
     "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "onchange": "^6.1.0"
   }
 }
