@@ -1,5 +1,3 @@
-import {sum} from "lodash/math";
-
 const calculateStylePoints = (styleNotes) => {
     const minNote = Math.min(...styleNotes);
     const maxNote = Math.max(...styleNotes);
