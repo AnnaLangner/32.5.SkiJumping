@@ -59,7 +59,7 @@ describe('calculateTotalPoints', () => {
 
             const expected = totalPoints;
 
-            assert.equal(actual, expected);
+            assert.equal(actual.toFixed(1), expected);
         });
     });
 });
