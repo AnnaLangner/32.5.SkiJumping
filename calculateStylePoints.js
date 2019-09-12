@@ -1,9 +1,12 @@
 const calculateStylePoints = (styleNotes) => {
     const minNote = Math.min(...styleNotes);
     const maxNote = Math.max(...styleNotes);
-    const finallyStyleNotes = sum(...styleNotes) - sum(minNote + maxNote);
+    let sum = 0;
+    for (let i=0; i < styleNotes.length; i++) {
+        sum = sum + styleNotes[i];
+    }
 
-    return finallyStyleNotes;
+    return sum - (minNote + maxNote);
 
 };
 
