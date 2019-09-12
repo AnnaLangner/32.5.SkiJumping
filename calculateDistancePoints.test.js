@@ -12,12 +12,14 @@ describe('calculateDistancePoints', () => {
         121.2: [201, 225, 200],
     };
 
-    Object.entries(testDistanceValues).forEach(entry => {
-        const distancePoints = entry[0];
-        const args = entry[1];
+    for(let item in testDistanceValues) {
+        const name = item;
+        const args = testDistanceValues[item];
+
         const distance = args[0];
         const hillSize = args[1];
         const kPoint = args[2];
+        const distancePoints = name;
 
         it('should return distance points for hill size, K-Point, distance', () => {
             const actual = calculateDistancePoints(
@@ -30,5 +32,5 @@ describe('calculateDistancePoints', () => {
 
             assert.equal(actual, expected);
         });
-    });
+    };
 });

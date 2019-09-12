@@ -1,13 +1,13 @@
 const calculateDistancePoints = (distance, hillSize, kPoint) => {
-    const normal = distance + hillSize + (2 * (distance - kPoint));
-    const big = distance + hillSize + (1.8 * (distance - kPoint));
-    const mammoth = distance + hillSize + (1.2 * (distance - kPoint));
+    const normal = 60 + (2 * (distance - kPoint));
+    const big = 60  + (1.8 * (distance - kPoint));
+    const mammoth = 120  + (1.2 * (distance - kPoint));
 
-    if (hillSize === 60 && kPoint === 98) {
+    if (hillSize <= 109) {
         return (normal);
-    } else if (hillSize === 60 && kPoint === 120){
+    } else if (hillSize >= 110 && hillSize <= 184){
         return (big);
-    } else if (hillSize === 120 && kPoint === 200) {
+    } else {
         return (mammoth);
     }
 };
