@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/AnnaLangner/32.5.SkiJumping#readme",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "onchange": "^6.1.0"
